@@ -41,15 +41,15 @@ export function UiLayout({
     <div className=" flex flex-col bg-prussian ">
       < Pricebar />
       <div className="relative flex justify-items-center  max-h-80  ">
-  <div className="relative w-full h-full ">
-    <img
-      className="w-full h-full object-cover topbarMobile"
-      alt="Grumpy Stars-Wars"
-      src="/assets/hero.webp"
-    />
-    <div className="absolute bottom-0 left-0 right-0 h-44 max-h-80 bg-gradient-to-t from-prussian to-transparent"></div>
-  </div>
-</div>
+          <div className="relative w-full h-full ">
+            <img
+              className="w-full h-full object-cover topbarMobile"
+              alt="Grumpy Stars-Wars"
+              src="/assets/hero.webp"
+            />
+            <div className="absolute bottom-0 left-0 right-0 h-44 max-h-80 bg-gradient-to-t from-prussian to-transparent"></div>
+          </div>
+        </div>
 
 
 
@@ -71,6 +71,16 @@ export function UiLayout({
       <Article/>
       < Grumpgames />
       <Teams />
+      <div className="flex justify-items-center    ">
+          <div className="relative w-full h-full ">
+            <img
+              className="w-full h-full object-cover topbarMobile"
+              alt="Grumpy Stars-Wars"
+              src="/assets/death.png"
+            />
+            <div className="absolute top-0 left-0 right-0 h-full  bg-gradient-to-b from-prussian to-transparent"></div>
+          </div>
+        </div>
       
       <footer className="footer footer-center p-4 bg-base-300 text-base-content">
         <div className='flex'>
