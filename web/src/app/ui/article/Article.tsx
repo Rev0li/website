@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Article() {
     return (
-        <div className="flex flex-col md:flex-row justify-around items-stretch bg-aquamarine w-full pt-8 text-aero">
-            <div className="bg-grey/25 flex-1 flex flex-col items-center p-4 m-4 md:m-4 border-2 border-bckgd rounded space-y-4">
+        <div className="flex boxMobile justify-around items-stretch bg-aquamarine w-full  ">
+            <div className="bg-grey/25 flex-1 flex flex-col items-center p-4 m-4 md:m-4 border-2 border-red rounded space-y-4">
                 <h2 className="text-3xl  mb-8 text-white text-center  underline decoration-solid">Connect with Us – Because Why Not?</h2>
                 <h3 className="text-fear text-2xl">
                 We’re too grumpy to care.
@@ -21,7 +21,9 @@ export default function Article() {
                 </div>
                 <p className="text-white">
                 Join the Grumpy Cat fan club on social media – if you feel like it.<br />
-                Follow us on Twitter for a daily dose of snark, check out our Pinksale page for the latest in reluctant investment opportunities, and hop onto our Telegram for all the grumpy gossip. <br /></p>
+                Follow us on Twitter for a daily dose of snark, <br />
+                check out our Pinksale page for the latest in reluctant investment opportunities, <br />
+                and hop onto our Telegram for all the grumpy gossip. <br /></p>
                 <p className="text-white">We're practically everywhere, sharing our discontent with the world. <br />
                 So, hit those follow buttons and join the ranks of the unimpressed. Or don't. <br /></p>
                 
@@ -41,7 +43,7 @@ export default function Article() {
                 </a>
             </div>
 
-            <div className="bg-grey/25 flex-1 flex flex-col items-center p-4 m-4 md:m-4 border-2 border-midFear rounded space-y-4">
+            <div className="bg-grey/25 flex-1 flex flex-col items-center p-4 m-4 md:m-4 border-2 border-gread rounded space-y-4">
                 <h2 className="text-3xl  mb-8 text-white text-center  underline decoration-solid">I'm not a fucking crook</h2>
                 <p className=" text-white font-bold">
                 😻  0% Tax<br />
@@ -51,13 +53,16 @@ export default function Article() {
                 </p>
 
                 <p className=" text-white">
-                    We've permanently revoked the minting authority to prevent any unexpected increases in token supply, protecting your investment from inflation and dilution.<br /> 
-                    We've also revoked the freeze authority, ensuring that your assets are always accessible and never subject to sudden restrictions.<br /> 
+                    We've permanently revoked the minting authority to prevent any unexpected increases in token supply,<br /> 
+                     protecting your investment from inflation and dilution.<br /> 
+                    We've also revoked the freeze authority, ensuring that your assets are always accessible and <br /> 
+                    never subject to sudden restrictions.<br /> 
                 </p>
 
                 <p className=" text-white">
                     Security and Trust<br />
-                    By implementing these measures, we aim to provide a secure and trustworthy environment for your investments, ensuring peace of mind and confidence in our project.  
+                    By implementing these measures, we aim to provide a secure and trustworthy environment for your investments,<br /> 
+                    ensuring peace of mind and confidence in our project.  
                 </p>
                 <img src={require("../../../assets/greenGrump.webp")} alt="grumpy with green chart on background" className="w-full h-auto" />
             </div>

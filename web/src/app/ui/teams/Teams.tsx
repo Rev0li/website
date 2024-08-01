@@ -30,7 +30,7 @@ export default function Teams() {
     ];
 
     return (
-        <div className="flex flex-col items-center text-center p-4 m-4 text-aero border-4  border-blueGrump rounded-lg ">
+        <div className="flex flex-col items-center  p-4 m-4  ">
             <h2 className=" text-3xl text-white mb-4  underline decoration-solid">Team Grumpy</h2>
             <p className='text-xl text-fear'>Join us, or don't. We honestly couldn't care less.</p>
             <p className="text-white m-8 text-left">

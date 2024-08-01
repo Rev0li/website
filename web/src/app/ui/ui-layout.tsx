@@ -40,9 +40,19 @@ export function UiLayout({
   return (
     <div className=" flex flex-col bg-prussian ">
       < Pricebar />
-      <div className=" flex  justify-items-center    max-h-80">
-            <img className=" w-full h-full   " alt="Logo" src="/assets/hero.webp" />
-        </div>
+      <div className="relative flex justify-items-center  max-h-80  ">
+  <div className="relative w-full h-full ">
+    <img
+      className="w-full h-full object-cover topbarMobile"
+      alt="Grumpy Stars-Wars"
+      src="/assets/hero.webp"
+    />
+    <div className="absolute bottom-0 left-0 right-0 h-44 max-h-80 bg-gradient-to-t from-prussian to-transparent"></div>
+  </div>
+</div>
+
+
+
       {/* <div className=" text-neutral-content flex-col  md:flex-row space-y-2 md:space-y-0 z-10">
         <div className=" flex-1  justify-items-center ">
             <img className="mx-auto widh-full bg-cover;  " alt="Logo" src="/assets/logo.png" />

@@ -20,6 +20,7 @@ module.exports = {
       //Exotique
       orang: '#d97706',
       //Basic
+      
       blueGrump:"#B8F2E6",
       white: '#ffffff',
       green: '#6a994e',
