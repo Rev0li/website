@@ -30,6 +30,8 @@ body,
 /*  */
 /* TEXT */
 
+
+
 .spaceText p{
   margin: 3%;
 }
@@ -53,6 +55,13 @@ body,
   border-color: #087CA7;
   border-radius: 15px;
 }
+
+@media (min-width: 768px) {
+  .half-minus-margin {
+    width: calc(50% - 2rem); /* 2rem because 1rem each side for mx-4 */
+  }
+}
+
 /* ****************** */
 /*  */
 /*  */
@@ -88,9 +97,19 @@ body,
 
 /* ****************** */
 
+/*  */
+/*  */
+/*  */
+/* BG IMAGE */
 .bgRoad{
   background-image: url(./assets/grumpyroad.webp) ;
   background-size:cover;
-  min-height: 50rem;
+  min-height: 70rem;
   
+}
+
+.bgGame{
+  background-image: url(./assets/bg-website.webp) ;
+  background-size:cover;
+  min-height: 70rem;
 }

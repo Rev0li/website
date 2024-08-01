@@ -5,7 +5,7 @@ const generateCryptoData = () => {
   const cryptos = ['BTC', 'ETH', 'XRP', 'LTC', 'BCH', 'ADA', 'DOT', 'LINK'];
   return cryptos.map(crypto => ({
     name: crypto,
-    price: (Math.random() * 0.0000005 + 0.0000002).toFixed(9),
+    price: (Math.random() * 150 + 0.02).toFixed(2),
     change: (Math.random() * 50 - 25).toFixed(2)
   }));
 };

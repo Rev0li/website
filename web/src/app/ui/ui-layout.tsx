@@ -2,6 +2,7 @@ import { WalletButton } from '../solana/solana-provider';
 import * as React from 'react';
 import { ReactNode, Suspense, useEffect, useRef } from 'react';
 
+
 import { Link, useLocation } from 'react-router-dom';
 
 // my import
@@ -39,8 +40,8 @@ export function UiLayout({
   return (
     <div className=" flex flex-col bg-prussian ">
       < Pricebar />
-      <div className=" flex  justify-items-center  overflow-hidden max-h-60">
-            <img className=" w-full h-full   " alt="Logo" src="/assets/logo.png" />
+      <div className=" flex  justify-items-center    max-h-80">
+            <img className=" w-full h-full   " alt="Logo" src="/assets/hero.webp" />
         </div>
       {/* <div className=" text-neutral-content flex-col  md:flex-row space-y-2 md:space-y-0 z-10">
         <div className=" flex-1  justify-items-center ">
@@ -52,18 +53,31 @@ export function UiLayout({
         </div>
       </div> */}
 
-      <ClusterChecker>
+      {/* <ClusterChecker>
       <AccountChecker />
-      </ClusterChecker>
+      </ClusterChecker> */}
 
-      <Article/>
       < Grumpnomics/>
+      <Article/>
       < Grumpgames />
       <Teams />
       
       <footer className="footer footer-center p-4 bg-base-300 text-base-content">
+        <div className='flex'>
+
+      <a href="https://x.com/grumpycoincat" target="_blank" rel="noopener noreferrer">
+                        <img src={require("../../assets/x.png")} alt="Twitter Logo" className="w-8 h-8 md:w-10 md:h-10" />
+                    </a>
+                    <a href="https://www.pinksale.finance/" target="_blank" rel="noopener noreferrer">
+                        <img src={require("../../assets/pinksale.png")} alt="Pinksale Logo" className="w-8 h-8 md:w-10 md:h-10" />
+                    </a>
+                    <a href="https://tr.ee/6zcKj0wXOn" target="_blank" rel="noopener noreferrer">
+                        <img src={require("../../assets/telegram.png")} alt="Telegram Logo" className="w-8 h-8 md:w-10 md:h-10" />
+                    </a>
+        </div>
         <aside>
-          <p>dontcontactme@grumpy.coin</p>
+                    
+          <p>dontcontactme@grumpycoincat.xyz</p>
           <p>
           Created with meprise by the Grumpy team
           </p>

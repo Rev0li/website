@@ -30,9 +30,9 @@ export default function Teams() {
     ];
 
     return (
-        <div className="flex flex-col items-center text-center p-4 m-4 text-aero border-4 border-gread rounded-lg ">
-            <h2 className="text-2xl text-white mb-4">Team Grumpy</h2>
-            <p className='text-3xl text-fear'>Join us, or don't. We honestly couldn't care less.</p>
+        <div className="flex flex-col items-center text-center p-4 m-4 text-aero border-4  border-blueGrump rounded-lg ">
+            <h2 className=" text-3xl text-white mb-4  underline decoration-solid">Team Grumpy</h2>
+            <p className='text-xl text-fear'>Join us, or don't. We honestly couldn't care less.</p>
             <p className="text-white m-8 text-left">
             Meet the masterminds behind the legend! <br />
             The Grumpy Team is a collection of highly unimpressed individuals who reluctantly drag themselves to work every day to keep the Grumpy Cat empire running.<br /><br />

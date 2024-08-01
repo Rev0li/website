@@ -15,13 +15,17 @@ module.exports = {
     colors: {
       //Background
       bckgd: '#0d1b2a',
+      gray: '#1F2937',
+      borderGray: '#616161',
       //Exotique
       orang: '#d97706',
       //Basic
+      blueGrump:"#B8F2E6",
       white: '#ffffff',
       green: '#6a994e',
       red: '#d00000',
       grey: '#e5e5e5',
+      pinksaleSoft: "#FD96A9",
       //Gradiente
       aero: '#05B2DC',
       polynesian: '#004385',

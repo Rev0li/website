@@ -2,18 +2,13 @@ import React from 'react';
 
 export default function Article() {
     return (
-        <div className="flex flex-col md:flex-row justify-around items-stretch bg-aquamarine w-full py-8 text-aero">
+        <div className="flex flex-col md:flex-row justify-around items-stretch bg-aquamarine w-full pt-8 text-aero">
             <div className="bg-grey/25 flex-1 flex flex-col items-center p-4 m-4 md:m-4 border-2 border-bckgd rounded space-y-4">
-                <h2 className="text-3xl font-bold mb-8 text-white text-center">Connect with Us – Because Why Not?</h2>
-                <p className="text-white">
-                Join the Grumpy Cat fan club on social media – if you feel like it.<br />
-                Follow us on Twitter for a daily dose of snark, check out our Pinksale page for the latest in reluctant investment opportunities, and hop onto our Telegram for all the grumpy gossip. <br /></p>
-                <p className="text-white">We're practically everywhere, sharing our discontent with the world. <br />
-                So, hit those follow buttons and join the ranks of the unimpressed. Or don't. <br /></p>
+                <h2 className="text-3xl  mb-8 text-white text-center  underline decoration-solid">Connect with Us – Because Why Not?</h2>
                 <h3 className="text-fear text-2xl">
                 We’re too grumpy to care.
                     </h3>
-                <div className="flex space-x-4 my-4">
+                    <div className="flex space-x-4 my-4">
                     <a href="https://x.com/grumpycoincat" target="_blank" rel="noopener noreferrer">
                         <img src={require("../../../assets/x.png")} alt="Twitter Logo" className="w-8 h-8 md:w-10 md:h-10" />
                     </a>
@@ -24,11 +19,17 @@ export default function Article() {
                         <img src={require("../../../assets/telegram.png")} alt="Telegram Logo" className="w-8 h-8 md:w-10 md:h-10" />
                     </a>
                 </div>
+                <p className="text-white">
+                Join the Grumpy Cat fan club on social media – if you feel like it.<br />
+                Follow us on Twitter for a daily dose of snark, check out our Pinksale page for the latest in reluctant investment opportunities, and hop onto our Telegram for all the grumpy gossip. <br /></p>
+                <p className="text-white">We're practically everywhere, sharing our discontent with the world. <br />
+                So, hit those follow buttons and join the ranks of the unimpressed. Or don't. <br /></p>
+                
                     <img src={require("../../../assets/redgrumpy.webp")} alt="Grumpy with red chart on background" className="w-full h-auto  " />
             </div>
 
             <div className="bg-grey/25 flex-1 flex flex-col items-center p-4 m-4 md:m-4 border-2 border-grey rounded space-y-4">
-                <h2 className="text-3xl font-bold mb-8 text-white text-center">Discover the Phenomenon: Grumpy Cat's Rise to Fame</h2>
+                <h2 className="text-3xl  mb-8 text-white text-center  underline decoration-solid">Discover the Phenomenon: Grumpy Cat's Rise to Fame</h2>
                 <p className=" text-white">
                 In a world where celebrity status can be achieved by looking perpetually annoyed, Grumpy Cat reigns supreme.<br />
                 This CNN article chronicles the meteoric rise of the internet's favorite feline sourpuss.<br /><br />
@@ -41,7 +42,7 @@ export default function Article() {
             </div>
 
             <div className="bg-grey/25 flex-1 flex flex-col items-center p-4 m-4 md:m-4 border-2 border-midFear rounded space-y-4">
-                <h2 className="text-3xl font-bold mb-8 text-white text-center">I'm not a fucking crook</h2>
+                <h2 className="text-3xl  mb-8 text-white text-center  underline decoration-solid">I'm not a fucking crook</h2>
                 <p className=" text-white font-bold">
                 😻  0% Tax<br />
                 🙀  Metadata Authority Revoked<br />
