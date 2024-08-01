@@ -2,14 +2,27 @@ import { useEffect, useState } from 'react';
 
 // Générer des prix et pourcentages aléatoires pour les cryptomonnaies
 const generateCryptoData = () => {
-  const cryptos = ['BTC', 'ETH', 'XRP', 'LTC', 'BCH', 'ADA', 'DOT', 'LINK'];
-  return cryptos.map(crypto => ({
-    name: crypto,
-    price: (Math.random() * 150 + 0.02).toFixed(2),
-    change: (Math.random() * 50 - 25).toFixed(2)
-  }));
-};
+  const cryptos = ['DOGE', 'SHIB', 'GRUMPY', 'WIF', 'BONK', 'FLOKI', 'PEPE', 'BRETT'];
 
+  return cryptos.map(crypto => {
+    if (crypto === 'GRUMPY') {
+      // GRUMPY a un prix positif spécifique et un changement positif
+      const grumpyPrices = [9950, 995, 99.5];
+      return {
+        name: crypto,
+        price: grumpyPrices[Math.floor(Math.random() * grumpyPrices.length)],
+        change: (Math.random() * (23 - 10) + 10).toFixed(2) // entre 10% et 23%
+      };
+    } else {
+      // Autres cryptos ont un prix aléatoire entre -3 et +39
+      return {
+        name: crypto,
+        price: (Math.random() * (0.11 - 0.0000001) + (-0.017126)).toFixed(8), // entre -3 et +39
+        change: (-Math.random() * (60 - 10) - 10).toFixed(2) // entre -10% et -60%
+      };
+    }
+  });
+};
 export default function Pricebar() {
   const [cryptoData, setCryptoData] = useState(generateCryptoData());
 
@@ -28,3 +41,7 @@ export default function Pricebar() {
     </div>
   );
 }
+
+
+
+	
